@@ -1,0 +1,35 @@
+.btn {
+  padding: 1rem 2rem;
+  cursor: pointer;
+  background-color: inherit;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  @media only screen and (max-width: 37.5em) {
+    padding: 2rem 4rem;
+  }
+
+  &__white {
+    color: var(--dark-violet);
+    border: 2px solid var(--dark-violet);
+
+    &:hover {
+      background-color: var(--dark-violet);
+      color: var(--very-light-gray);
+    }
+  }
+
+  &__dark {
+    color: var(--very-light-gray);
+    border: 2px solid var(--very-light-gray);
+
+    &:hover {
+      background-color: var(--very-light-gray);
+      color: var(--dark-violet);
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
